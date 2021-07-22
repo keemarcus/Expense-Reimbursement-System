@@ -1,0 +1,29 @@
+Created new user with name: Marcus Kee, 
+                     email: keemarcus@gmail.com, Is manager? True.
+Successfully retrieved one user the from database: User ID: 1 User Name: Marcus Kee User Email: keemarcus@gmail.com User Level: Employee.
+Created new user with name: User Two, 
+                     email: user2@email.com, Is manager? False.
+Created new user with name: User Three, 
+                     email: user3@email.com, Is manager? False.
+Successfully retrieved one user the from database: User ID: 2 User Name: User Two User Email: user2@email.com User Level: Manager.
+Successfully retrieved one user the from database: User ID: 3 User Name: User Three User Email: user3@email.com User Level: Manager.
+Successfully retrieved one user the from database: User ID: 3 User Name: User Three User Email: user3@email.com User Level: Manager.
+Successfully retrieved one user the from database: User ID: 3 User Name: User Three User Email: user3@email.com User Level: Manager.
+Successfully retrieved one user the from database: User ID: 3 User Name: User Three User Email: user3@email.com User Level: Manager.
+Created new user with name: User Four, 
+                     email: user4@email.com, Is manager? True.
+Successfully retrieved one user the from database: User ID: 4 User Name: User Four User Email: user4@email.com User Level: Employee.
+Successfully retrieved one user the from database: ('404 Not Found: No such user exists with that ID.', 404).
+Successfully retrieved one user the from database: 404 Not Found: No such user exists with that ID..
+Successfully retrieved one user the from database: User ID: 4 User Name: User Four User Email: user4@email.com User Level: Employee.
+Successfully retrieved one user the from database: User ID: 4 User Name: User Four User Email: user4@email.com User Level: Employee.
+Successfully retrieved all users the from database: {}.
+Created new user with name: Msrcus Kee, 
+                     email: keemarcus@gmail.com, Is manager? True.
+Created new user with name: User Two, 
+                     email: user2@email.com, Is manager? False.
+Created new user with name: User Three, 
+                     email: user3@email.com, Is manager? False.
+Successfully retrieved all users the from database: {1: <src.models.user.User object at 0x0000022B925809A0>, 2: <src.models.user.User object at 0x0000022B925809D0>, 3: <src.models.user.User object at 0x0000022B92580A30>}.
+Successfully retrieved one user the from database: User ID: 2 User Name: Marcus Kee User Email: keemarcus2@gmail.com User Level: Manager.
+Successfully retrieved one user the from database: User ID: 1 User Name: Marcus Kee User Email: keemarcus@gmail.com User Level: Manager.

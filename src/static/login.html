@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="/home.html">Home</a></li>
+    </ul>
+
+    <div id="login">
+        <h1 style="text-align: center;">Login</h1>
+        <form method="post" action="http://localhost:5000/users/login">
+            <p>Email Address:</p>
+            <input id="email" type="text" name="email" />
+            <p>Password:</p>
+            <input id="password" type="password" name="password" />
+            <p></p>
+            <input id="login_button" type="submit" style="width: 50%; margin-left: 25%; margin-right: 25%;"/>
+        </form>
+    </div>
+
+</body>
+
+</html>

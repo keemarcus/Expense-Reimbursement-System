@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reimbursements</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/reimbursements.html">Your Reimbursements</a></li>
+        <li id="reviews" hidden><a href="/reviews.html">Your Reviews</a></li>
+        <li id="pending" hidden><a href="/pending.html">Pending Reviews</a></li>
+        <li id="past reimbursements" hidden><a href="/past_reimbursements.html">Past Reimbursements</a></li>
+        <li id="stats" hidden><a href="/stats.html">Statistics</a></li>
+        <li><a id="logout" href="/home.html">Log Out</a></li>
+    </ul>
+
+    <h1>Your Reimbursements</h1>
+    <table>
+        <thead>
+            <tr id='form_row'>
+                <form method="post" action="http://localhost:5000/reimbursements">
+                    <td>Create New</td>
+                    <td><input id="amount" name="amount" type="number" min="0.00" step="0.01" value="0.00" required></td>
+                    <td><input id="reason" name="reason" type="text" required></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="submit_button" type="submit"></td>
+                </form>
+            </tr>
+            <tr>
+                <th>Reimbursement<br>ID</th>
+                <th>Amount</th>
+                <th>Reason for Reimbursement</th>
+                <th>Date Created</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="reimbursement table">
+        </tbody>
+    </table>
+    <script src="\scripts\reimbursements.js"></script>
+</body>
+</html>

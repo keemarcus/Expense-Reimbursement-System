@@ -1,0 +1,11 @@
+* As a user, I can sign into my account
+* As a user, I can submit a new reimbursement request
+* As a user, I can view all my past and pending reimbursement requests
+* As a user, I can edit my reimbursement requests
+* As a manager, I can view all past reimbursements
+* As a manager, I can view all pending reimbursement requests
+* As a manager, I can review a pending reimbursement request
+* As a manager, I can see all my completed reviews
+* As a manager, I can edit my completed reviews
+* As a manager, I can view key reimbursement statistics
+

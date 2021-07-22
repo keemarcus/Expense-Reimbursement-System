@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li id="reimbursements" hidden><a href="/reimbursements.html">Your Reimbursements</a></li>
+        <li id="reviews" hidden><a href="/reviews.html">Your Reviews</a></li>
+        <li id="pending" hidden><a href="/pending.html">Pending Reviews</a></li>
+        <li id="past reimbursements" hidden><a href="/past_reimbursements.html">Past Reimbursements</a></li>
+        <li id="stats" hidden><a href="/stats.html">Statistics</a></li>
+        <li><a id="logout" href="/home.html">Log Out</a></li>
+    </ul>
+    
+    <h1>Home</h1>
+    
+    <div id="login" hidden>
+        <h1 style="text-align: center;">Login</h1>
+        <form method="post" action="http://localhost:5000/users/login">
+            <p>Email Address:</p>
+            <input id="email" type="text" name="email" />
+            <p>Password:</p>
+            <input id="password" type="password" name="password" />
+            <p></p>
+            <input id="login_button" type="submit" style="width: 50%; margin-left: 25%; margin-right: 25%;"/>
+        </form>
+    </div>
+
+    <div id="request" hidden>
+        <h1 style="text-align: center;">Create New<br>Reimbursement Request</h1>
+        <form method="post" action="http://localhost:5000/reimbursements">
+            <p>Reimbursement Amount:</p>
+            <input id="amount" name="amount" type="number" min="0.00" step="0.01" value="0.00" required>
+            <p>Reason for Reimbursement:</p>
+            <input id="reason" name="reason" type="text" required>
+            <p></p>
+            <input id="submit_button" type="submit" style="width: 50%; margin-left: 25%; margin-right: 25%;"/>
+        </form>
+    </div>
+
+    <script src="\scripts\home.js"></script>
+</body>
+
+</html>

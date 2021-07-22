@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pending</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/reimbursements.html">Your Reimbursements</a></li>
+        <li id="reviews" hidden><a href="/reviews.html">Your Reviews</a></li>
+        <li id="pending" hidden><a href="/pending.html">Pending Reviews</a></li>
+        <li id="past reimbursements" hidden><a href="/past_reimbursements.html">Past Reimbursements</a></li>
+        <li id="stats" hidden><a href="/stats.html">Statistics</a></li>
+        <li><a id="logout" href="/home.html">Log Out</a></li>
+    </ul>
+
+    <h1>Pending Reviews</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Reimbursement<br>ID</th>
+                <th>Employee ID</th>
+                <th>Amount</th>
+                <th>Reason for Reimbursement</th>
+                <th>Leave Comments</th>
+                <th>Result</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id='pending table'>
+            <tr id='template row' hidden>
+                <form id="form-" method="post" action="http://localhost:5000/reviews/">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="comments-" name="comments" type="text" required></td>
+                    <td><select id="result-" name="result" required>
+                        <option value="" disabled selected>Pending</option>
+                        <option value="approved">Approve</option>
+                        <option value="denied">Deny</option>
+                    </select></td>
+                    <td><input name="submit" type="submit"></td>
+                </form>
+            </tr>
+        </tbody>
+    </table>
+    <script src="\scripts\pending.js"></script>
+</body>
+
+</html>

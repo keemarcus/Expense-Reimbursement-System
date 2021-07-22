@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/reimbursements.html">Your Reimbursements</a></li>
+        <li id="reviews" hidden><a href="/reviews.html">Your Reviews</a></li>
+        <li id="pending" hidden><a href="/pending.html">Pending Reviews</a></li>
+        <li id="past reimbursements" hidden><a href="/past_reimbursements.html">Past Reimbursements</a></li>
+        <li id="stats" hidden><a href="/stats.html">Statistics</a></li>
+        <li><a id="logout" href="/home.html">Log Out</a></li>
+    </ul>
+    
+    <h1>Statistics</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Stat</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody id="stats table">
+            <tr id="template row" hidden>
+                <td id="stat-"></td>
+                <td id="value-"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="/scripts/stats.js"></script>
+</body>
+</html>
